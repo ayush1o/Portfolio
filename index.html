@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Your Name - Portfolio</title>
-    <link rel="stylesheet" href="STYLE.css">
+    <title>Portfolio - Your Name</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <nav>
-            <ul>
+            <div class="logo">Your Name</div>
+            <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -19,33 +20,43 @@
         </nav>
     </header>
 
-    <section id="home" class="intro">
-        <h1>Hello, I'm Your Name</h1>
-        <p>Welcome to my portfolio website!</p>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm <span>Your Name</span></h1>
+            <p>A passionate developer focused on creating amazing digital experiences.</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
     </section>
 
     <section id="about" class="about">
         <h2>About Me</h2>
-        <p>I'm a passionate developer with skills in web development, problem-solving, and continuous learning.</p>
+        <div class="about-content">
+            <p>I'm a dedicated developer with expertise in web development, problem-solving, and emerging technologies. I thrive in dynamic environments and aim to deliver impactful digital solutions.</p>
+            <img src="your-image.jpg" alt="Your Image" class="profile-img">
+        </div>
     </section>
 
     <section id="projects" class="projects">
-        <h2>My Projects</h2>
-        <div class="project-card">
-            <h3>Project 1</h3>
-            <p>Description of your project here. Mention the technologies used and the goal of the project.</p>
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Project 1</h3>
+                <p>A brief description of the project and technologies used.</p>
+                <a href="#" class="btn">View Details</a>
+            </div>
+            <div class="project-card">
+                <h3>Project 2</h3>
+                <p>A brief description of the project and technologies used.</p>
+                <a href="#" class="btn">View Details</a>
+            </div>
+            <!-- Add more project cards as needed -->
         </div>
-        <div class="project-card">
-            <h3>Project 2</h3>
-            <p>Description of another project here.</p>
-        </div>
-        <!-- Add more projects as necessary -->
     </section>
 
     <section id="contact" class="contact">
-        <h2>Contact Me</h2>
-        <p>Email: yourname@example.com</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/yourname" target="_blank">linkedin.com/in/yourname</a></p>
+        <h2>Contact</h2>
+        <p>Feel free to reach out for collaborations or inquiries!</p>
+        <a href="mailto:yourname@example.com" class="btn">Email Me</a>
     </section>
 
     <footer>
